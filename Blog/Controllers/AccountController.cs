@@ -101,7 +101,7 @@ public class AccountController : ControllerBase
     }
 
     [Authorize]
-    [HttpPost("va/accounts/upload-image")]
+    [HttpPost("v1/accounts/upload-image")]
     public async Task<IActionResult> UploadImage(
         [FromBody] UploadImageViewModel model,
         [FromServices] BlogDataContext context)
